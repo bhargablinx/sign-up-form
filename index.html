@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/fonts/stylesheet.css" />
+    <title>Odin Garden</title>
+  </head>
+  <body>
+    <main>
+      <div class="side-background">
+        <div class="odin-logo">
+          <img src="images/odin-lined.png" alt="Odin Logo" />
+          ODIN
+        </div>
+        <div class="credit">
+          Photo by
+          <a href="https://unsplash.com/@olenkasergienko">Olena Bohovyk</a> on
+          <a href="https://unsplash.com">Unsplash</a>
+        </div>
+      </div>
+      <div class="main-section">
+        <div class="top-description">
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams.
+          <div>Sign up <span>now</span> to get started.</div>
+        </div>
+        <div class="slogan">You <span>know</span> you want to.</div>
+        <div class="form">
+          <div class="form-heading">Let's do this!</div>
+          <form action="/index.html" method="post">
+            <div class="personal-info row">
+              <div class="small-container">
+                <label for="fname">FIRST NAME</label>
+                <input type="text" name="first-name" id="fname" required />
+              </div>
+              <div class="small-container">
+                <label for="lname">LAST NAME</label>
+                <input type="text" name="last-name" id="lname" required />
+              </div>
+            </div>
+            <div class="contact-info row">
+              <div class="small-container">
+                <label for="mail">EMAIL</label>
+                <input type="email" name="email" id="mail" required />
+              </div>
+              <div class="small-container">
+                <label for="contact-num">PHONE NUMBER</label>
+                <input
+                  type="number"
+                  name="phone-number"
+                  id="contact-num"
+                  min="0"
+                  pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$"
+                />
+              </div>
+            </div>
+            <div class="password-info row">
+              <div class="small-container">
+                <label for="password">PASSWORD</label>
+                <input
+                  type="password"
+                  name="pass"
+                  id="password"
+                  minlength="8"
+                  placeholder="8 characters or more"
+                  required
+                />
+                <div class="alert">* Password do not match</div>
+              </div>
+              <div class="small-container">
+                <label for="cnf-password">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  name="cnf-pass"
+                  id="cnf-password"
+                  minlength="8"
+                  required
+                />
+              </div>
+            </div>
+            <button class="create-btn" type="submit">Create Account</button>
+          </form>
+        </div>
+        <div class="alternative">
+          ALready have an account?
+          <a href="https://x.com/BhargabLinx">Log in</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
