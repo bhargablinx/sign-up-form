@@ -1,0 +1,1 @@
+![Simple Sign Up Form](/images/sign-up-form.png)
